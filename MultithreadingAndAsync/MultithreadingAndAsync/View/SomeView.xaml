@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="MultithreadingAndAsync.View.SomeView">
+	<ContentPage.Content>
+        <StackLayout BackgroundColor="#FADBD8" VerticalOptions="StartAndExpand">
+            <Entry Text="{Binding OutputResult}" HorizontalOptions="CenterAndExpand" Margin="5,50,5,15" VerticalOptions="StartAndExpand"  />
+            <Button Command="{Binding ClickCommandStart}" Text="Start" HorizontalOptions="CenterAndExpand" Margin="5,15,5,15" VerticalOptions="StartAndExpand"  />
+            <Button Command="{Binding ClickCommandCancel}" Text="Cancel" Margin="5,25,5,350" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" />
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

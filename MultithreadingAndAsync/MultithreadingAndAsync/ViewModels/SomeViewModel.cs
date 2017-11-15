@@ -14,8 +14,8 @@ namespace MultithreadingAndAsync.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        //private Command _clickCommandStart;
-        //private Command _clickCommandCancel;
+        private Command _clickCommandStart;
+        private Command _clickCommandCancel;
         private string _outputResult;
 
         public string OutputResult

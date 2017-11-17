@@ -9,7 +9,7 @@ namespace MultithreadingAndAsync
         public App()
         {
             InitializeComponent();
-            MainPage = new SomeView();
+            MainPage = new SomeViewPage();
         }
     }
 }

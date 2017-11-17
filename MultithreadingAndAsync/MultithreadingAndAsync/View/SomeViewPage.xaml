@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MultithreadingAndAsync.View.SomeViewPage">
+	<ContentPage.Content>
+         <StackLayout BackgroundColor="#FADBD8" VerticalOptions="StartAndExpand">
+            <Entry Text="{Binding OutputResult}" HorizontalOptions="CenterAndExpand" Margin="5,50,5,15" VerticalOptions="StartAndExpand" WidthRequest="80" TextColor="Green" />
+            <Button Command="{Binding ClickCommandStart}" Text="Random"  TextColor="Black" BackgroundColor="Red" HorizontalOptions="CenterAndExpand" Margin="5,15,5,15" VerticalOptions="StartAndExpand" WidthRequest="100"  />
+            <Button Command="{Binding ClickCommandCancel}" Text="CancelForRandom" TextColor="Black" BackgroundColor="Olive" HorizontalOptions="CenterAndExpand" Margin="5,15,5,15" VerticalOptions="StartAndExpand" WidthRequest="150"  />
+            <Button Command="{Binding ClickCommandCount}" Text="CountAdd"  TextColor="Black" BackgroundColor="Fuchsia" Margin="5,25,5,15" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand"  WidthRequest="100"/>
+            <Entry Text="{Binding OutputAdd}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Margin="5,15,5,20" WidthRequest="80" TextColor="Aqua" />
+            <Entry Text="{Binding OutputCanceled}" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" Margin="5,15,5,300" WidthRequest="180" HeightRequest="50" BackgroundColor="Aqua" />
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

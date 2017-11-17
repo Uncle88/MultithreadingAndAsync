@@ -12,14 +12,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)View\SomeView.xaml.cs">
-      <DependentUpon>SomeView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SomeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\SomeViewPage.xaml.cs">
+      <DependentUpon>SomeViewPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\SomeView.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\SomeViewPage.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
